@@ -21,9 +21,9 @@ import Page from './Projects'
 
       <main style={{backgroundColor:"yellow"}} >
 
-        <div style={{display:"flex" ,gap:"5px",justifyContent:"space-around ",backgroundColor:"white" }}>
+        <div style={{display:"flex" ,gap:"5px",justifyContent:"space-around ",backgroundColor:"white" ,textAlign:"center" }}>
 
-          <div style={{display:"flex" ,flexDirection:"column", justifyContent:"center", alignItems:"center" ,width:"30%"}}>
+          <div style={{display:"flex" ,flexDirection:"column", justifyContent:"center", alignItems:"center" ,width:"40%"}}>
           <div style={{display:"flex" ,flexDirection:"column", justifyContent:"center", alignItems:"center",backgroundColor:"white" ,marginBottom:"20px"}}>
            <Image 
              src={data.avatar_url}
@@ -38,8 +38,8 @@ import Page from './Projects'
 
            <p>{data.bio}</p>
            <div style={{display:"flex", gap:"30px"}}>
-            <button style={{padding:"15px" ,width:"50%"}}>  <Link href={"https://drive.google.com/file/d/1RpHZgTgGbC4Y5xsCedBbqq_YIL-hFUYh/view?usp=sharing"}>Resume</Link> </button>
-            <button  style={{padding:"15px" ,width:"50%"}}>  <Link href={data.html_url}>Follow</Link> </button>
+            <button style={{padding:"15px" ,backgroundColor:"gray",width:"50%"}}>  <Link href={"https://drive.google.com/file/d/1RpHZgTgGbC4Y5xsCedBbqq_YIL-hFUYh/view?usp=sharing"}>Resume</Link> </button>
+            <button  style={{padding:"15px", backgroundColor:"gray",width:"50%"}}>  <Link href={data.html_url}>Follow</Link> </button>
             
             
 
@@ -51,12 +51,14 @@ import Page from './Projects'
            </div>
             <div style={{display:"flex" ,flexDirection:"column", justifyContent:"center", alignItems:"center",backgroundColor:"white",marginBottom:"20px" ,width:"full" }}>
 
-            <h4>{data.bio}</h4>
+            <h4>
+               <button style={{backgroundColor:"blue"}} >HTML</button><button style={{backgroundColor:"blue"}} >JAVASCRIPT</button> <button style={{backgroundColor:"blue"}} >CSS</button> <button style={{backgroundColor:"blue"}} >tYPESCRPIPT</button>
+            </h4>
 
             
            </div>
            <div style={{display:"flex" ,flexDirection:"column", justifyContent:"center", alignItems:"center",backgroundColor:"white",marginBottom:"20px",width:"full",padding:"100px"}}>
-
+    
            <p>Masai School</p>
            <p> holly cross college </p>
            <p>st .jsoseph H s sechool </p>

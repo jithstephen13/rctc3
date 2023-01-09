@@ -19,7 +19,7 @@ const Page = ({data}) => {
           {
             items.map((item)=>{
               return (
-                <div key={Math.random() }  style={{ display:"flex", justifyContent:"space-around", alignItems:"baseline", padding:"30px"}}
+                <div key={Math.random() }  style={{ display:"flex", justifyContent:"space-around",textAlign :"center", alignItems:"baseline", padding:"30px"}}
                  onClick={HandleClik}
                 >
 
