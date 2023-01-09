@@ -936,8 +936,8 @@ const Projects = ({data}) => {
           {
             item.map((item)=>{
               return (
-                <div key={Math.random() }  style={{ display:"flex", justifyContent:"space-around", alignItems:"baseline", padding:"30px"}}
-                 onClick={()=>HandleClik(item.git_url)}
+                <div key={Math.random() }  style={{ display:"flex", border:"1px solid ", justifyContent:"space-around", alignItems:"baseline", padding:"30px"}}
+               
                 >
 
                   <div>
