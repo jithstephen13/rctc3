@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Projects = ({data}) => {
@@ -923,8 +924,8 @@ const Projects = ({data}) => {
 }
 ]
     
-      const HandleClik=()=>{
-
+      const HandleClik=(git_url)=>{
+        window.location.href=git_url
       }
     
     return (
@@ -936,7 +937,7 @@ const Projects = ({data}) => {
             item.map((item)=>{
               return (
                 <div key={Math.random() }  style={{ display:"flex", justifyContent:"space-around", alignItems:"baseline", padding:"30px"}}
-                 onClick={HandleClik}
+                 onClick={()=>HandleClik(item.git_url)}
                 >
 
                   <div>

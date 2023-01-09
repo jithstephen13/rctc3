@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Page = ({data}) => {
@@ -7,8 +8,8 @@ const Page = ({data}) => {
  
  
     
-      const HandleClik=()=>{
-
+      const HandleClik=(git_url)=>{
+        <Link href={git_url}>Follow</Link>
       }
     
     return (
@@ -20,7 +21,7 @@ const Page = ({data}) => {
             items.map((item)=>{
               return (
                 <div key={Math.random() }  style={{ display:"flex", justifyContent:"space-around",textAlign :"center", alignItems:"baseline", padding:"30px"}}
-                 onClick={HandleClik}
+                 onClick={()=>HandleClik(item.git_url)}
                 >
 
                   <div>
