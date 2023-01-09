@@ -546,7 +546,7 @@ const Projects = ({data}) => {
     );
 };
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const res= await fetch(`https://api.github.com/search/repositories?q=user:jithstephen13+fork:true&sort=updated&per_page=10&type=Repositories`)
   const data= await res.json()
   console.log(data)
